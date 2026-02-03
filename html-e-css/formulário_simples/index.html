@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: rgb(246, 250, 249);
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        td {
+            vertical-align: top;
+        }   
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário simples</h1>
+    <form action="/submit" method="post"> 
+        <table>
+        <tr>  
+        <th><label for="nome">Nome:</label></th>
+        <td><input type="text" id="nome" name="nome" required><br><br></td>
+        </tr>
+        <tr>
+        <th><label for="email">Email:</label></th>
+        <td><input type="email" id="email" name="email" required><br><br></td>
+        </tr>
+
+       
+
+
+        <tr>
+        <th><label for="msg">Digite sua<br>Mensagem:</label></th>
+        <td><textarea id="msg" rows="3" cols="40">...</textarea><br><br></td>
+        </tr>
+
+        <tr>
+        <th><label for="masc">Gênero:</label></th>
+        <td><input type="radio" id="masc" name="genero" value="masculino">
+        <label for="masc">Masculino</label><br> 
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="fem">Feminino</label><br>
+        
+        <br></tr>
+        <tr>
+            <th><input type="checkbox" id="aceito" name="aceito"></th>
+            <td><label for="aceito">Aceito os termos e condições</label><br><br></td></tr>
+            <tr>
+            <th><input type="checkbox" id="newsletter" name="newsletter"></th>
+            <td><label for="newsletter">Quero receber a newsletter</label><br><br></td>
+        
+        </tr>
+        <br>
+<tr>
+        <td><input type="submit" value="Enviar"></td>
+        </tr>
+
+        </form></table>
+        </form>
+        <code>
+        <p>Neste exemplo, temos um formulário simples com dois campos: "Nome" e "Email". O atributo action define o destino para onde os dados do formulário serão enviados quando o usuário clicar no botão "Enviar". Neste caso, os dados serão enviados para a URL "/submit". O atributo method especifica o método HTTP que será usado para enviar os dados do formulário. Aqui, estamos usando o método "post", que é adequado para enviar dados sensíveis ou grandes quantidades de informações.</p>
+        <p>Quando o usuário preenche os campos e clica no botão "Enviar", os dados são enviados para o servidor na URL especificada no atributo action, usando o método definido no atributo method. O servidor então processa esses dados conforme necessário.</p>
+        <p>Resumindo:</p>
+        <ul>
+            <li><strong>action="/submit"</strong>: Define a URL para onde os dados do formulário serão enviados. Normalmente é uma página de backend que processa os dados.</li>
+            <li><strong>method="post"</strong>: Especifica que os dados do formulário serão enviados usando o método HTTP POST.</li>
+            <li><strong>method="get"</strong>: Especifica que os dados do formulário serão enviados usando o método HTTP GET.</li>
+        </ul>
+        <p>Esses atributos são essenciais para o funcionamento correto dos formulários HTML e permitem que os desenvolvedores controlem como e para onde os dados do formulário são enviados.</p>
+        <p>A função <strong>TABLE</strong> é usada para criar tabelas em HTML. Cada tabela é representada por um elemento 'TABLE', que pode conter linhas 'TR', células de dados 'TD' e células de cabeçalho 'TH'.</p>
+        <p>A função <strong>TR</strong> é usada para criar linhas em uma tabela HTML. Cada linha é representada por um elemento 'TR', que pode conter células de dados 'TD' u células de cabeçalho 'TH'.</p></code>
+        
+ 
+
+
+
+</body>
+
+</html>
